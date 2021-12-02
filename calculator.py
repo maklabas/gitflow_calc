@@ -37,4 +37,5 @@ if __name__ == "__main__":
                       "Press 'y' or 'yes' to continue\n")
 
         if guess not in ('y', 'yes'):
+            print("bye")
             running = False
