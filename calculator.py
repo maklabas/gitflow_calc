@@ -16,6 +16,10 @@ class Calculator:
             return f"{self.num1} bigger than {self.num2}"
         elif self.oper == ">":
             return f"{self.num2} bigger than {self.num1}"
+        elif self.oper == ">=":
+            return f"{self.num1} bigger or equals then {self.num2}"
+        elif self.oper == "<=":
+            return f"{self.num2} bigger or equals then {self.num1}"
         else:
             return "Unexpected format"
 
