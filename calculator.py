@@ -8,6 +8,8 @@ class Calculator:
     @property
     def calculation(self):
         if self.oper in self.__supported_operations:
+            if self.num1 == 0 and self.oper == "/":
+                return "Division by zero"
             return eval(f"{self.num1}{self.oper}{self.num2}")
         else:
             return "Unexpected format"
@@ -16,7 +18,7 @@ class Calculator:
 if __name__ == "__main__":
     running = True
     while running:
-        number1 = float(input("Enter first number "))
+        number1 = float(input("\n\nEnter first number "))
         number2 = float(input("Enter second number "))
         operator = input("Enter operator    ")
 
