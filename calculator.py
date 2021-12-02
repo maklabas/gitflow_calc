@@ -3,7 +3,7 @@ class Calculator:
         self.num1 = num1
         self.num2 = num2
         self.oper = oper
-        self.__supported_operations = ("+", "-")
+        self.__supported_operations = ("+", "-", "/", "*")
 
     @property
     def calculation(self):
